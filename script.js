@@ -3,10 +3,15 @@ var pi = "3.14159265358979323846264338327950288419716939937510582097494459230781
 
 $(document).ready(function () {
   $("#check").click(function () {
-    var pi_input = $("#pi-input").val(); 
+    var pi_input = $("#pi-input").val();
+    real_pi_pos = pi.length + 1;
     for (var i = 0; i < pi.length; i++) {
-      if (pi_input[i] == pi[i]) {
-        //more code
+      if (pi_input[i] == pi[i]) {}
+      else {
+        alert("Wrong digit at position " + real_pi_pos);
+        break;
       }
-  };
-};
+    }
+  });
+});
+
